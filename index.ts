@@ -221,7 +221,8 @@ export interface Footprint extends Feature {
     properties: FeatureProperties & {
         category: FOOTPRINT_CATEGORY,
         name: Labels | null,
-        building_ids: Array<BuildingId>
+        building_ids: Array<BuildingId>,
+        display_point: DisplayPoint | null | undefined
     }
 }
 
